@@ -14,7 +14,7 @@ gender, email etc.)
 
 ## How to use
 ### Prerequisites
-• Intellij or other Java IDE's
+• Intellij or other Java IDE's  
 • JDK 11+
 
 ### Pre-config
@@ -34,4 +34,4 @@ Execute the following command in the project root folder
 > .\gradlew.bat bootRun
 ```
 
-Now the app is available at `http://localhost:8080/`
+Now the app is available at `http://localhost:<port>/` (port specified in application.yml file)
