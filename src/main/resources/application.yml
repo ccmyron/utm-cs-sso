@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: ERROR
+    com.auth0.example: INFO
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: <client-id> # TBC
+            client-secret: <client-secret> # TBC
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: <issuer-uri> # TBC
